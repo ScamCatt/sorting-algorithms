@@ -19,7 +19,7 @@ window = figure.canvas.manager.window
 rects = plt.bar([i for i in range(n)], values)
 
 # Visualize the sorting
-def plot_graph(values: list, n = len(values)):
+def plot_graph():
     plt.show()
 
 def update_graph(values):
@@ -136,4 +136,4 @@ print(time.time()-lmao)
 
 # Update second parameter to any of the other sorting algorithms besides merge-sort
 window.after(0, quicksort_start)
-plot_graph(values)
+plot_graph()
