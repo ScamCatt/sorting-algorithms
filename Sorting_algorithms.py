@@ -9,12 +9,12 @@ import matplotlib.pyplot as plt
 setrecursionlimit(10**6)
 
 # Generate an unsorted list of 50 integers
-n = 50
-values = list(range(1, 51))
+n = 100
+values = list(range(1, n+1))
 shuffle(values)
 print(values)
 
-figure = plt.figure()
+figure = plt.figure(figsize=(10, 8))
 window = figure.canvas.manager.window
 rects = plt.bar([i for i in range(n)], values)
 
@@ -128,7 +128,7 @@ def quick_sort(values: list, start, end):
     return values
 
 def quicksort_start():
-    quick_sort(values, 0, 49)
+    quick_sort(values, 0, n-1)
 
 lmao = time.time()
 #print(quick_sort(values, 0, len(values)-1))
