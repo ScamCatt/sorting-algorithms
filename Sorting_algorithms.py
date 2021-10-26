@@ -133,5 +133,7 @@ def quicksort_start():
 lmao = time.time()
 #print(quick_sort(values, 0, len(values)-1))
 print(time.time()-lmao)
+
+# Update second parameter to any of the other sorting algorithms besides merge-sort
 window.after(0, quicksort_start)
 plot_graph(values)
