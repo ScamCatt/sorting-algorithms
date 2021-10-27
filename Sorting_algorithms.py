@@ -26,7 +26,6 @@ def update_graph(values):
     for i, rect in enumerate(rects):
             rect.set_height(values[i])
     figure.canvas.draw()
-    time.sleep(0.05)
 
 # Selection sort
 # Time complexity: O(n^2) (Very Slow)
@@ -135,5 +134,5 @@ lmao = time.time()
 print(time.time()-lmao)
 
 # Update second parameter to any of the other sorting algorithms besides merge-sort
-window.after(0, quicksort_start)
+window.after(0, selection_sort)
 plot_graph()
