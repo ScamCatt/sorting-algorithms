@@ -134,5 +134,5 @@ lmao = time.time()
 print(time.time()-lmao)
 
 # Update second parameter to any of the other sorting algorithms besides merge-sort
-window.after(0, selection_sort)
+window.after(0, quicksort_start)
 plot_graph()
