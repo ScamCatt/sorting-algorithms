@@ -2,7 +2,6 @@ import time
 from sys import setrecursionlimit
 from random import shuffle
 import matplotlib
-matplotlib.use('TKAgg')
 import matplotlib.pyplot as plt
 
 # Edit the recursion limit 
